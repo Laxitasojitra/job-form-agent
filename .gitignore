@@ -1,0 +1,14 @@
+# Personal data - never push this to GitHub
+profile.json
+resume.pdf
+answers.json
+browser_profile/
+chrome_agent_profile/
+output/
+.env
+
+# Python / PyCharm
+.venv/
+venv/
+__pycache__/
+.idea/

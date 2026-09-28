@@ -1,0 +1,61 @@
+{
+  "personal": {
+    "full_name": "FILL_ME",
+    "first_name": "FILL_ME",
+    "last_name": "FILL_ME",
+    "email": "FILL_ME",
+    "phone": "FILL_ME",
+    "date_of_birth": "YYYY-MM-DD",
+    "gender": "FILL_ME",
+    "current_city": "FILL_ME",
+    "home_state": "FILL_ME"
+  },
+  "education": {
+    "pg": {
+      "degree": "FILL_ME",
+      "branch": "FILL_ME",
+      "college": "FILL_ME",
+      "start_year": "FILL_ME",
+      "graduation_year": "FILL_ME",
+      "cgpa": "FILL_ME"
+    },
+    "ug": {
+      "degree": "FILL_ME",
+      "branch": "FILL_ME",
+      "college": "FILL_ME",
+      "graduation_year": "FILL_ME",
+      "cgpa_or_percentage": "FILL_ME"
+    },
+    "class_12": {
+      "board": "FILL_ME",
+      "percentage": "FILL_ME",
+      "passing_year": "FILL_ME"
+    },
+    "class_10": {
+      "board": "FILL_ME",
+      "percentage": "FILL_ME",
+      "passing_year": "FILL_ME"
+    },
+    "active_backlogs": 0,
+    "backlog_history": 0,
+    "gap_years": 0
+  },
+  "skills": ["FILL_ME"],
+  "projects": [
+    {
+      "name": "FILL_ME",
+      "description": "FILL_ME (2-3 lines, in your own words)",
+      "tech": ["FILL_ME"]
+    }
+  ],
+  "links": {
+    "linkedin": "FILL_ME",
+    "github": "FILL_ME",
+    "portfolio": ""
+  },
+  "resume_path": "resume.pdf",
+  "preferences": {
+    "preferred_locations": ["FILL_ME"],
+    "willing_to_relocate": true
+  }
+}
