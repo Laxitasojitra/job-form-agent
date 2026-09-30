@@ -46,7 +46,7 @@ resume.pdf + profile.json
 Requires Python 3.10+ and Google Chrome.
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/Laxitasojitra/job-form-agent.git
 cd job-form-agent
 python -m venv .venv
 .venv\Scripts\activate            # Windows  (macOS/Linux: source .venv/bin/activate)
