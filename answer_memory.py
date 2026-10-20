@@ -32,9 +32,17 @@ def normalize(label: str) -> str:
 
 
 def load() -> dict:
-    if MEMORY_FILE.exists():
-        return json.loads(MEMORY_FILE.read_text(encoding="utf-8"))
-    return {}
+    """Read saved answers. A corrupted or empty file is set aside instead of crashing the agent."""
+    if not MEMORY_FILE.exists():
+        return {}
+    try:
+        data = json.loads(MEMORY_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        backup = MEMORY_FILE.with_suffix(".json.bak")
+        MEMORY_FILE.replace(backup)
+        print(f"Warning: {MEMORY_FILE} was unreadable; moved it to {backup} and starting fresh.")
+        return {}
+    return data if isinstance(data, dict) else {}
 
 
 def recall(label: str):
